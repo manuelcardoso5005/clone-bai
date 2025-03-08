@@ -4,12 +4,25 @@
 /* VARIÁVEIS */
 /* ======================== */
 :root {
+    /* Cores */
     --primary-blue   : #002D74;
     --secondary-blue : #04a2e0;
     --hover-blue     : #001a48;
     --light-gray     : #F4F4F4;
     --white          : #FFFFFF;
     --black          : #000;
+
+    /* ESPAÇAMENTO */
+    --spacing-small  : 10px;
+    --spacing-medium : 20px;
+    --spacing-large  : 30px;
+    --spacing-xlarge : 40px;
+    --spacing-xxlarge: 50px;
+    --spacing-xxxlarge: 60px;
+    --spacing-xxxxlarge: 100px;
+    
+    --pdxlarge: 25px;
+    --pdxxxlarge:370px;
 }
 
 
@@ -205,7 +218,7 @@ header {
 
 .nav-submenu {
     display: none;
-    background-color: yellow;
+    background-color: var(--white);
 }
 
 .nav-submenu-content {
@@ -217,9 +230,25 @@ header {
     display: block;
 }
 
+
+.nav-submenu-subitem {
+    background-color: var(--light-gray);
+    position: absolute;
+    left: var(--pdxxxlarge);
+    right: var(--pdxlarge);
+    top: var(--pdxlarge);
+    bottom: var(--pdxlarge);
+    padding: 20px;
+}
+
 .nav-submenu-item-title {
-    min-width: 100px;
+    /* position: relative;
+     *//* min-width: var(--spacing-xxxxlarge);
+    position: absolute;
     background-color: red;
+     *//* left: calc((var(--spacing-xxxxlarge) * 2) + 50px) ; */
+    /* right: calc(0 + var(--pdxlarge)); */
+    /* letf: */
 }
 
 .nav-submenu-item {
