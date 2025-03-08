@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+
+/* ======================== */
+/* VARIÁVEIS */
+/* ======================== */
+:root {
+    --primary-blue   : #002D74;
+    --secondary-blue : #04a2e0;
+    --hover-blue     : #001a48;
+    --light-gray     : #F4F4F4;
+    --white          : #FFFFFF;
+    --black          : #000;
+}
+
+
+/* ======================== */
+/* RESET CSS */
+/* ======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================== */
+/* ESTILOS GERAIS */
+/* ======================== */
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* ======================== */
+/* TIPOGRAFIA */
+/* ======================== */
+.title-main {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text-small {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.active {
+    color: var(--secondary-blue);
+}
+/* ======================== */
+/* HEADER */
+/* ======================== */
+header {
+    /* Adicione aqui os estilos do cabeçalho */
+}
+
+/* Estilos específicos para a barra superior */
+#header-top-bar {
+    background-color: var(--light-gray);
+    padding: 3px 0;
+}
+
+#header-top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5px 15px;
+}
+
+#header-top-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+#header-top-list li {
+    margin-left: 35px;
+}
+
+#header-top-list li:nth-child(1) {
+    margin-left: 0;
+}
+
+#lang-btn {
+    color: var(--black);
+    cursor:pointer;
+}
+
+/* EStilos para area do logotipo */
+#header-logo-area{
+    padding: 15px 0;
+}
+
+#header-logo-area .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo-area .container #search-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+}
+
+#header-logo-area .container #search-area .search-icon {
+    font-size: 30px;
+    color: var(--primary-blue);
+    cursor: pointer;
+    padding-top: 6px;
+}
+
+#header-logo-area .container #search-area .search-button {
+    padding: 12.5px 30px;
+    color: var(--primary-blue);
+    border: .5px solid var(--primary-blue); 
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#header-logo-area .container #search-area .BAIDirent-link {
+    background-color: var(--primary-blue);
+    transition: all .3s ease-in-out;
+}
+
+
+#header-logo-area .container #search-area .BAIDirent-link:hover {
+    background-color: var(--hover-blue);
+}
+
+
+#header-logo-area .container #search-area .BAIDirent-link img {
+    width: 107px;
+    height: 17px;
+    display: block;
+}
+
+/* NAV Menu */
+#header-nav-area {
+    background-color: var(--secondary-blue);
+    padding: 15px 0;
+}
+
+#header-nav-area .nav-menu  {
+    display: flex;
+    gap:35px;
+    position: relative;
+}
+
+#header-nav-area ul li .nav-options {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-submenu {
+    position: absolute;
+    background-color: white; 
+    left: 0;
+    right: 0;
+    top: 37px;
+    padding: 15px 35px;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu li:hover .nav-submenu {
+    display: block;
+}
+
+.nav-submenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.nav-submenu {
+    display: none;
+    background-color: yellow;
+}
+
+.nav-submenu-content {
+    padding: 35px 10px;
+    max-width: 200px;
+}
+
+.nav-submenu.show {
+    display: block;
+}
+
+.nav-submenu-item-title {
+    min-width: 100px;
+    background-color: red;
+}
+
+.nav-submenu-item {
+    color: var(--secondary-blue);
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ======================== */
+/* MAIN */
+/* ======================== */
+main {
+    /* Estilos gerais para o conteúdo principal */
+}
+
+/* ======================== */
+/* FOOTER */
+/* ======================== */
+footer {
+    /* Adicione aqui os estilos do rodapé */
+}
